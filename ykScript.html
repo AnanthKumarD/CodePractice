@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div ng-data="testDialogue" ng-dialogue="testDialogue">t</div>
+	<div ng-data="testDialogue1" ng-dialogue="testDialogue1">t</div>
+	<div ng-data="testDialogue2" ng-dialogue="testDialogue2">t</div>
+
+	<script>
+		
+	
+	var convertingString = {
+		testData : "testDialogue",
+		testData1 : "testDialogue1",
+		testData2 : "testDialogue2"
+	}
+
+	elements = document.body.getElementsByTagName('div'); 
+	for(i=0; i < elements.length; i++) { 
+		var elementFromTag = elements[i].getAttribute('ng-data');
+
+		console.log(elementFromTag,'-------')
+
+		Object.keys(convertingString).forEach(function(key) {
+		   var val = convertingString[key];
+		   if(val == elementFromTag ){
+		   		
+				document.body.getElementsByTagName('div')[i].setAttribute('ng-data',key);
+				document.body.getElementsByTagName('div')[i].getAttribute('ng-data');
+				console.log(val,'>>>>',key,);
+		   }
+		   
+		   //console.log(document.getElementsByTagName("div").hasAttribute("ng-data"),'>>>>>>');
+		   //document.body.innerHTML = document.body.innerHTML.replace(/target string/g, "replacement string");
+		});
+	}
+
+	</script>
+</body>
+</html>
+
+
+
+
+
