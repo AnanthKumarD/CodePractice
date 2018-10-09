@@ -29,7 +29,7 @@ Code of above pattern (Finished) -> present in ./_program1.js
 543
 54
 5
-Code of above pattern (currently Working) -> present in ./_program1.js
+Code of above pattern (Finished) -> present in ./_program1.js
 
 
 
@@ -40,14 +40,14 @@ Code of above pattern (currently Working) -> present in ./_program1.js
 1234
 12345
 
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program1.js
 
 5
 45
 345
 2345
 12345
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program1.js
 
 
 1
@@ -56,14 +56,14 @@ Code of above pattern
 4321
 54321
 
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program1.js
 
 5
 54
 543
 5432
 54321
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program1.js
 
 
 1
@@ -72,14 +72,14 @@ Code of above pattern
 4444
 55555
 
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program1.js
 
 5
 44
 333
 2222
 11111
-Code of above pattern
+Code of above pattern (currently Working) -> present in ./_program1.js
 
 
 55555
