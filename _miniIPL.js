@@ -24,7 +24,6 @@ for(i = 0 ; i < a.length ; i++){
 
 	console.log('+++++++++++++++++++++++++++++++')
 }
-
 // for(i = 1 ; i <= 56 ; i++){
 // 	var currentDay = new Date();
 // 	var nextDay = new Date(currentDay);
