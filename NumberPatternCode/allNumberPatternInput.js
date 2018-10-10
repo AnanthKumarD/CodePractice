@@ -79,7 +79,7 @@ Code of above pattern (Finished) -> present in ./_program1.js
 333
 2222
 11111
-Code of above pattern (currently Working) -> present in ./_program1.js
+Code of above pattern (Finished) -> present in ./_program1.js
 
 
 55555
@@ -88,14 +88,14 @@ Code of above pattern (currently Working) -> present in ./_program1.js
 22
 1
 
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program2.js
 
 11111
 2222
 333
 44
 5
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program2.js
 
 
 12345
@@ -104,20 +104,20 @@ Code of above pattern
 21
 1
 
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program2.js
 
 1234567
 12345
 123
 1
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program2.js
 
 
 1
 01
 101
 0101
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program2.js
 
 
 13579
@@ -125,9 +125,7 @@ Code of above pattern
 579
 79
 9
-Code of above pattern
-
-
+Code of above pattern (Finished) -> present in ./_program2.js
 
 
 1
@@ -136,7 +134,7 @@ Code of above pattern
 2 4 6 8
 1 3 5 7 9
 
-Code of above pattern
+Code of above pattern (currently Working) -> present in ./_program2.js
 
 55555
 45555
