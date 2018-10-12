@@ -1,34 +1,34 @@
 
-12345
-1234
-123
-12
-1
+  12345
+  1234
+  123
+  12
+  1
 
 Code of above pattern (Finished) -> present in ./_program1.js
 
 
-12345
-2345
-345
-45
-5
+  12345
+  2345
+  345
+  45
+  5
 Code of above pattern (Finished) -> present in ./_program1.js
 
 
-54321
-4321
-321
-21
-1
+  54321
+  4321
+  321
+  21
+  1
 
 Code of above pattern (Finished) -> present in ./_program1.js
 
-54321
-5432
-543
-54
-5
+  54321
+  5432
+  543
+  54
+  5
 Code of above pattern (Finished) -> present in ./_program1.js
 
 
