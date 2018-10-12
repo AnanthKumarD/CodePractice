@@ -144,8 +144,6 @@ Code of above pattern (currently Working) -> present in ./_program2.js
 Code of above pattern (Finished) -> present in ./_program2.js
 
 
-
-
 1
 23
 456
@@ -287,7 +285,6 @@ Code of above pattern (Finished) -> present in ./_program4.js
       7 8 9 10
 11 12 13 14 15
 Code of above pattern (Currently working) -> present in ./_program4.js
-
 
 
     5
@@ -501,7 +498,6 @@ Code of above pattern
 14          8  
 13 12 11 10 9 
 Code of above pattern
-
 
 
 N=39714
