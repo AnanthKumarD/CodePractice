@@ -284,7 +284,7 @@ Code of above pattern (Finished) -> present in ./_program4.js
          4 5 6
       7 8 9 10
 11 12 13 14 15
-Code of above pattern (Currently working) -> present in ./_program4.js
+Code of above pattern (Finished) -> present in ./_program4.js
 
 
     5
@@ -293,13 +293,13 @@ Code of above pattern (Currently working) -> present in ./_program4.js
  5432
 54321
 
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program4.js
 
 1
 212
 32123
 4321234
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program4.js
 
 
 1
@@ -307,22 +307,22 @@ Code of above pattern
 345
 4567
 56789
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program4.js
 
 
-  1  2  3  4  5
-  6  7  8  9
- 10 11 12
- 13 14
- 15
-Code of above pattern
+1  2  3  4  5
+6  7  8  9
+10 11 12
+13 14
+15
+Code of above pattern (Finished) -> present in ./_program4.js
 
 1234
 2341
 3421
 4321
 
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program4.js
 
 
 11111
@@ -330,7 +330,7 @@ Code of above pattern
 111
 00
 1
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program4.js
 
 
 
@@ -339,7 +339,7 @@ Code of above pattern
               4   9  16 
          25  36  49  64  81 
     100 121 144 169 196 225 256 
-289 324 361 400 441 484 529 576 625
+289 324 361 400 441 484 529 576 625 (Finished) -> present in ./_program4.js
 
 Code of above pattern
 
@@ -348,7 +348,7 @@ Code of above pattern
 1   1
 1   1
 11111 
-Code of above pattern
+Code of above pattern (Finished) -> present in ./_program4.js
 
 
 
@@ -359,7 +359,7 @@ Code of above pattern
  1 2 3 4 
 1 2 3 4 5
 
-Code of above pattern
+Code of above pattern (Currently working) -> present in ./_program4.js
 
     1
    123
