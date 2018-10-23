@@ -13,7 +13,7 @@ function isCryptSolution(crypt, solution) {
     }
     crypt[i] = convertedData;
   }
-   console.log(crypt[0].length,'>>>>',crypt[1].length,'<><><>',crypt[0].charAt(0),'<<<<<<<<<<',crypt[1].charAt(0))
+  console.log(crypt[0].length,'>>>>',crypt[1].length,'<><><>',crypt[0].charAt(0),'<<<<<<<<<<',crypt[1].charAt(0))
   if(crypt[0].length >1 && crypt[1].length > 1 && crypt[0].charAt(0) == 0 || crypt[1].charAt(0) == 0){
   	return false;
   }else{

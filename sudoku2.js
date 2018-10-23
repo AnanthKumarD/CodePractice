@@ -42,8 +42,9 @@ function gridSearch(a){
 	counter = 0;
 
 	var b = []
-
 	while(currentBlock<totalblocks){
+
+
 		for(i=rowVal;i<columnVal;i++){
 			b[i] = []
 			for(j = firstVal; j < secondVal ; j++){
@@ -54,10 +55,10 @@ function gridSearch(a){
 		    });
 	 	}
 
+
 	 	b = b.filter(function(x){
 	      return (x !== (undefined || null || ''));
 	    });
-
 	 	firstVal = secondVal;
 	 	secondVal = secondVal+3;
 	 	
@@ -68,7 +69,7 @@ function gridSearch(a){
 			break;
 		}
 		
-		if(firstVal ==9 && secondVal == 12){
+		if(firstVal == 9 && secondVal == 12){
 			rowVal =  columnVal;
 			columnVal = columnVal + 3;
 
