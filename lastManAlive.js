@@ -3,19 +3,23 @@ var totalAlivePerson = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22
 var deadPerson = [];
 var innerCounter = 1;
 while (totalAlivePerson.length > 1){
+	totalAlivePerson = totalAlivePerson.filter(function(x){
+      return (x !== (undefined || null || ''));
+    });
 	for( i = 0; i < totalAlivePerson.length ; i++ ){
-		if(innerCounter == 100){ // add based on how many index or counter the number to be removed
-			//console.log(i,'innerCounterResetted to 0 again',totalAlivePerson);
-
+		if(innerCounter == 50){ // add based on how many index or counter the number to be removed
 			deadPerson.push(totalAlivePerson[i]);
 			delete totalAlivePerson[i];
 
 			totalAlivePerson = totalAlivePerson.filter(function(x){
 		      return (x !== (undefined || null || ''));
 		    });
-			innerCounter = 0;
+		    
+			innerCounter = 1;
 		}
-		innerCounter++;
+		if(totalAlivePerson[i]!=undefined){
+			innerCounter++;
+		} 
 	}
 }
 
