@@ -497,7 +497,7 @@ Code of above pattern (Currently working) -> present in ./_program5.js
 15          7  
 14          8  
 13 12 11 10 9 
-Code of above pattern
+Code of above pattern (Currently working) -> present in ./_program5.js
 
 
 N=39714
