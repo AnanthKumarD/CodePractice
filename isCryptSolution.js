@@ -1,37 +1,34 @@
 var a = {};
 
 function isCryptSolution(crypt, solution) {
-  for(i=0;i<solution.length;i++){
-    if(a[solution[i][0]] == undefined){
-          a[solution[i][0]] = parseInt(solution[i][1])
+    var newSolutionArray = {};
+    for(i=0;i<solution.length;i++){
+        newSolutionArray[solution[i][0]] = parseInt(solution[i][1])
     }
-  }
-  for(i=0;i<crypt.length;i++){
-  	var convertedData = '';
-    for(j=0;j<crypt[i].length;j++){
-    	convertedData += a[crypt[i][j]];
+    var d = []
+    crypt.forEach( function(e1, i1) {
+        dValue = '';
+        for(i=0;i<e1.length;i++){
+            dValue = dValue + newSolutionArray[e1[i]];
+        }
+        d.push(dValue)
+    });
+    
+    if(d[0].length < 2 && d[1].length < 2 && d[2].length < 2){
+        return ((parseInt(d[0]) + parseInt(d[1])) == parseInt(d[2]) ? true : false)
     }
-    crypt[i] = convertedData;
-  }
-  console.log(crypt[0].length,'>>>>',crypt[1].length,'<><><>',crypt[0].charAt(0),'<<<<<<<<<<',crypt[1].charAt(0))
-  if(crypt[0].length >1 && crypt[1].length > 1 && crypt[0].charAt(0) == 0 || crypt[1].charAt(0) == 0){
-  	return false;
-  }else{
-    var summedData = parseInt(crypt[0]) + parseInt(crypt[1]);
-
-  	if(parseInt(summedData) == parseInt(crypt[2])){
-	  	return true;
-	  }else{
-	  	return false;
-	  }
-  } 
+    
+    if(d[0].indexOf(0) !=0 && d[1].indexOf(0)!=0 && d[2].indexOf(0)!=0){
+        return ((parseInt(d[0]) + parseInt(d[1])) == parseInt(d[2]) ? true : false)
+    }else{
+        return false;
+    }
 }
 
-crypt = ["AA", 
- "BB", 
- "AA"]
-solution =  [["A","1"], 
- ["B","0"]]
+crypt =  ["A", 
+ "A", 
+ "A"]
+solution = [["A","0"]]
 
 
 var b = isCryptSolution(crypt , solution); 

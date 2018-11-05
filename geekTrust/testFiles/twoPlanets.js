@@ -76,8 +76,8 @@ function _twoPlanets(horse,elephants,armouredTanks,slingGuns){
 
 //var  b =_twoPlanets("100H","101E","20AT","5SG")
 //var  b =_twoPlanets("150H","96E","26AT","8SG")
-//var  b =_twoPlanets("90H","96E","40AT","20SG")
-var  b = _twoPlanets("250H","50E","20AT","15SG");
+var  b =_twoPlanets("90H","96E","40AT","20SG")
+//var  b = _twoPlanets("250H","50E","20AT","15SG");
 console.log('before>>>>',b)
 for( i = 0 ; i < b.length ; i++){
 
