@@ -134,7 +134,7 @@ Code of above pattern (Finished) -> present in ./_program2.js
 2 4 6 8
 1 3 5 7 9
 
-Code of above pattern (currently Working) -> present in ./_program2.js
+Code of above pattern (Finished) -> present in ./_program2.js
 
 55555
 45555
@@ -207,7 +207,7 @@ Code of above pattern (Finished) -> present in ./_program3.js
 22
 1
 
-Code of above pattern (Currently working) -> present in ./_program3.js
+Code of above pattern (Finished) -> present in ./_program3.js
 
 5432*
 543*1
@@ -222,7 +222,8 @@ Code of above pattern (Finished) -> present in ./_program3.js
 12321
 1234321
 
-Code of above pattern (Currently working) -> present in ./_program3.js
+Code of above pattern (Finished) -> present in ./_program3.js
+
 
 0 
 909 

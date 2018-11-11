@@ -132,33 +132,6 @@ console.log(arr);
 
 
 console.log('\n\n');
-
-
-
-/*
-
-	11111
-	2222
-	333
-	22
-	1
-
-*/
-
-var a = '';
-var flag = 0;
-var n ;
-for(i = 0 ; i < 5 ; i++){
-	for(j = i ; j < 5 ; j++){
-		if(i > 2) flag = 1;
-		a = a + (flag == 1 ? (i-1) : (i+1));
-	}
-	console.log(a);
-	a = '';
-}
-console.log('\n\n')
-
-
 /*
 
 	5432*
@@ -184,25 +157,6 @@ for(i = 0 ; i < 5 ; i++){
 	a = '';
 }
 console.log('\n\n');
-
-
-/*
-	1
-	121
-	12321
-	1234321
-*/
-var a = '';
-for(i = 0 ; i < 4 ; i++){
-	for(j = 0 ; j < 7 ; j++){
-		
-	}
-	console.log(a);
-	a = '';
-}
-console.log('\n\n');
-
-
 
 /*
 	1        1
@@ -253,3 +207,59 @@ for(i = 1 ; i <= 5 ; i++){
 console.log('\n\n');
 
 
+
+/*
+
+	11111
+	2222
+	333
+	22
+	1
+
+*/
+
+var a = '';
+var flag = 0;
+var n ;
+k = 0;
+for(i = 0 ; i < 5 ; i++){
+	if(i > 2) {
+		flag = 1;
+		k--;
+	}else{
+		k++;
+	}
+	for(j = i ; j < 5 ; j++){
+		a = a + (flag == 1 ? (k) : (k));
+	}
+	console.log(a);
+	a = '';
+}
+console.log('\n\n')
+
+
+
+
+/*
+	1
+	121
+	12321
+	1234321
+*/
+var a = '';
+var k = 1;
+var l = 1;
+for(i = 1 ; i <= 4 ; i++){
+	for(j = 1 ; j <= k ; j++){
+		if(j < i ){
+			a = a + (l++)
+		}else{
+			a = a + (l--)
+		}
+	}
+	console.log(a);
+	k = k + 2;
+	a = '';
+	l=1;
+}
+console.log('\n\n');
