@@ -177,32 +177,9 @@ console.log('\n\n');
 
 
 var a = '';
-var n = 1;
-var outerVal = 3; 
-var innerVal = 0 , k = 0;
+var outerSpace = 3 , innerSpace = 0;
 for(i = 0 ; i < 7 ; i++){
-	for(j = 0 ; j < outerVal ; j++){
-		a = a + ' ' ;
-	}	
 	
-	if(k > 0){
-		k += 2
-	}else {
-		k++
-	}
-	//console.log(k,'--ll')
-	for(j = i ; j <= i ; j++){
-		a = a + (n);
-	}
-	
-
-	if( i < 3 ){
-		outerVal--;
-		n++	
-	}else{
-		outerVal++;
-		n--
-	}
 	console.log(a);
 	a = '';
 }
@@ -217,3 +194,50 @@ console.log('\n\n');
 14          8  
 13 12 11 10 9 
 */
+var a = []
+for( i = 0 ; i < 5 ; i++){
+	a[i] = []
+	for( j = 0 ; j < 5 ; j++){
+		a[i][j] = 0;
+	}	
+}
+var low = 0,high = 5 , n = 1; 
+for( i = 0 ; i < 1 ; i++ ){
+	for( j = low ; j < high ; j++ ,n++){
+		a[i][j] = n
+	}
+	for( k = low + 1; k < high ; k++ ,n++){
+		a[k][high-1] = n
+	}
+	for( l = high - 1 ; l > low ; l-- ,n++){
+		a[high-1][l-1] = n
+	}
+	for( l = high - 1 ; l > low + 1; l-- ,n++){
+		a[l-1][low] = n
+	}
+
+}
+console.log(a)
+
+
+/*
+	N=39714
+
+	3 9 1 7 4
+	9 1 7 4
+	1 7 4
+	7 4
+	4
+*/
+
+var n = "39714";
+var a = '';
+k = 0;
+for( i = n.length ; i > 0 ; i--){
+	for( j = k ; j < n.length ; j++){
+		a = a + n[j]
+	}
+	k++;
+	console.log(a);
+	a = '';
+}

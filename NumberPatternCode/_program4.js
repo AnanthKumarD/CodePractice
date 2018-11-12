@@ -342,69 +342,6 @@ for(i = 1 ; i <= 9 ; i++ ){
 }
 console.log('\n\n');
 
-
-
-/*
-	*000*000*
-	0*00*00*0
-	00*0*0*00
-	000***000
-*/
-var a = '';
-var b = 4;
-var d = 0;
-for( i = 0 ; i < 4 ; i++ ){
-	for( j = 0 ; j < 9 ; j++ ){
-		a = a + ((j % b == d ) ? '*' : 0)
-	}
-	console.log(a);
-	a = '';
-	b = b - 1;
-	d = d + 1;
-}
-console.log('\n\n');
-
-
-/*
-	5 5 5 5 5 5 5 5 5 
-	5 4 4 4 4 4 4 4 5 
-	5 4 3 3 3 3 3 4 5 
-	5 4 3 2 2 2 3 4 5 
-	5 4 3 2 1 2 3 4 5 
-	5 4 3 2 2 2 3 4 5 
-	5 4 3 3 3 3 3 4 5 
-	5 4 4 4 4 4 4 4 5 
-	5 5 5 5 5 5 5 5 5
-*/
-var d = [];
-for(i=0;i<9;i++){
-	d[i] = []
-	for(j=0;j<8;j++){
-		d[i][j] = 0
-	}
-}
-var low = 0, high = 9 , n = 5;
-for(i = 0 ; i < 5 ; i++ , low++, high--){
-	for(j = low ; j < high ; j++){
-		d[low][j] = n;
-	}
-	for(j = low ; j < high ; j++){
-		d[j][high] = n;
-	}
-
-	for(j = high ; j > low ; j--){
-		d[high-1][j-1] = n;
-	}
-	for(j = high ; j > low ; j--){
-		d[j-1][low] = n;
-	}
-	n--;
-}
-console.log(d,'Before')
-console.log('\n\n');
-
-
-
 /*
 	1
 	2 4
@@ -474,4 +411,65 @@ for(i = 0 ; i < 5 ; i++ ){
 	console.log(a);
 	a = '';
 }
+console.log('\n\n');
+
+
+
+/*
+	*000*000*
+	0*00*00*0
+	00*0*0*00
+	000***000
+*/
+var a = '';
+for( i = 0 ; i < 4 ; i++ ){
+	for( j = 0 ; j < 4 ; j++ ){
+		a = a + (i == j ? '*' : 0)
+	}
+	a = a + '*';
+	for( j = 3 ; j >= 0 ; j-- ){
+		a = a + (i == j ? '*' : 0)
+	}
+	console.log(a);
+	a = '';
+}
+console.log('\n\n');
+
+
+/*
+	5 5 5 5 5 5 5 5 5 
+	5 4 4 4 4 4 4 4 5 
+	5 4 3 3 3 3 3 4 5 
+	5 4 3 2 2 2 3 4 5 
+	5 4 3 2 1 2 3 4 5 
+	5 4 3 2 2 2 3 4 5 
+	5 4 3 3 3 3 3 4 5 
+	5 4 4 4 4 4 4 4 5 
+	5 5 5 5 5 5 5 5 5
+*/
+var d = [];
+for(i=0;i<9;i++){
+	d[i] = []
+	for(j=0;j<9;j++){
+		d[i][j] = 0
+	}
+}
+var low = 0, high = 8 , n = 5;
+for(i = 0 ; i < 5 ; i++ , low++, high--){
+	for(j = low ; j < high ; j++){
+		d[low][j] = n;
+	}
+	for(j = low ; j <= high ; j++){
+		d[j][high] = n;
+	}
+
+	for(j = high ; j > low ; j--){
+		d[high][j-1] = n;
+	}
+	for(j = high ; j > low ; j--){
+		d[j-1][low] = n;
+	}
+	n--;
+}
+console.log(d,)
 console.log('\n\n');
