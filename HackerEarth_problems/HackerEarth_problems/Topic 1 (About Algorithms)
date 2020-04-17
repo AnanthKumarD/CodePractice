@@ -1,0 +1,43 @@
+sum of number
+
+
+int var1,var2;
+var3 = var2+ var1
+console.log(var3);
+
+
+
+simple_interest = (principle * time * rate_of_interest) /100
+
+Meter = km * 1000
+centimeter = km * 100000
+millimeter = km * 1000000
+
+
+swapping using 3rd variable
+
+c = a;
+a = b;
+b = c;
+
+
+swapping without 3rd variable
+a = 10, b = 20;
+
+a = a + b;
+b = a - b;
+a = a - b;
+
+using xor
+a^=b
+b^=a
+a^=b
+
+
+c = (f-32) * 5/9
+
+if(y%4 == 0 && (y%400 == 0 || y%100!=0) {
+	'leap year'
+	return;
+}
+console.log('not leap year')
