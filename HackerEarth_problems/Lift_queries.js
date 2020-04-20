@@ -6,7 +6,6 @@ fs.readFile('./inputFile.txt', 'utf-8', (err, input) => {
     var liftA = 0,
         liftB = 7;
     for (i = 1; i < inputLines.length; i++) {
-
         var a = liftB - inputLines[i];
         var b = inputLines[i] - liftA;
         if (a > b || a == b) {
