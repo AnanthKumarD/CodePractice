@@ -1,54 +1,42 @@
+/**
+ * Link:- https://www.hackerearth.com/practice/data-structures/stacks/basics-of-stacks/practice-problems/algorithm/feel-taller/
+ */
+
 const fs = require('fs');
 fs.readFile('./inputFile.txt', 'utf-8', (err, input) => {
     if (err) throw err;
     var inputLines = input.trim().split("\n");
     var noOfBuildings = inputLines[1].trim().split(' ');
-    var max = 0;
-    var count = 0;
-    var maxCount = []
-    for (i = 0; i < noOfBuildings.length; i++) {
-        max = noOfBuildings[i];
-        count++;
-        for (j = i + 1; j < noOfBuildings.length; j++) {
-            if (parseInt(noOfBuildings[j]) > max) {
-                max = noOfBuildings[j];
-                count++;
+    var j = noOfBuildings.length - 1;
+    var count = Array(noOfBuildings.length).fill(0);
+    while (j >= 0) {
+        if (noOfBuildings[j + 1] == undefined) {
+            count[j] = 1
+        } else {
+            var k = j + 1;
+
+            while (parseInt(noOfBuildings[j]) > parseInt(noOfBuildings[k]) && k != noOfBuildings.length) {
+                k++;
+            }
+            while (parseInt(noOfBuildings[j]) < parseInt(noOfBuildings[k])) {
+                count[j] = count[k] + 1;
+                // k++;
+                break;
+            }
+            while (parseInt(noOfBuildings[k]) != NaN && k == noOfBuildings.length) {
+                count[j] = 1;
+                break;
             }
         }
-        maxCount.push(count);
-        count = 0;
-        max = 0;
-        console.log(i);
+        j--;
     }
-    console.log(maxCount);
-    var k = 3;
-    while (k != inputLines.length) {
-        var d = inputLines[k].trim().split(' ');
-        var totalValue = (maxCount[parseInt(d[0])] - maxCount[parseInt(d[1])]) + 1
-        process.stdout.write(totalValue + "\n");
-        k++;
+    // console.log(JSON.stringify(count));
+    var i = 3;
+    while (i != inputLines.length) {
+        var d = inputLines[i].trim().split(' ');
+        var a = count[parseInt(d[0])] > count[parseInt(d[1])] ? count[parseInt(d[0])] : count[parseInt(d[1])];
+        console.log(count[parseInt(d[0])], '.....', count[parseInt(d[1])], '>>>', noOfBuildings[parseInt(d[0])], '....', noOfBuildings[parseInt(d[1])], '....', noOfBuildings[parseInt(d[0])] > noOfBuildings[parseInt(d[1])])
+            // process.stdout.write(a + "\n");
+        i++;
     }
 })
-
-
-// var i = 3;
-//     var max = 0;
-//     var count = 0;
-//     while (i != inputLines.length) {
-//         var d = inputLines[i].trim().split(' ')
-
-//         for (k = parseInt(d[0]); k <= parseInt(d[1]); k++) {
-//             if (!max) {
-//                 max = noOfBuildings[k];
-//                 count++;
-//             }
-//             if (parseInt(noOfBuildings[k]) > max) {
-//                 max = noOfBuildings[k];
-//                 count++;
-//             }
-//         }
-//         i++;
-//         process.stdout.write(count + "\n");
-//         count = 0;
-//         max = 0;
-//     }
