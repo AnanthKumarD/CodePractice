@@ -13,7 +13,10 @@ def reverse(x):
 
     if flag == 1:
         b = '-'+b;
-        return int(b) < -math.pow(2,31) and 0 or int(b);
+        if(int(b) <= -math.pow(2,31)):
+            return 0;
+        else:
+            return int(b)
     else:
         return int(b) < (math.pow(2, 31) -1) and int(b) or 0;
         
@@ -21,6 +24,3 @@ print(reverse(-123));
 print(reverse(1123));
 print(reverse(1534236469));
 print(reverse(-8463847412));
-
-
-print(dir(__builtins__))
