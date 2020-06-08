@@ -28,7 +28,6 @@ fs.readFile('../inputFile.txt', 'utf-8', (err, input) => {
             if (parseInt(newAllocations[j]) <= parseInt(MaxAmountLimit)) {
                 MaxAmountLimit -= newAllocations[j];
                 houseCount++;
-
             }
         }
         c++;
