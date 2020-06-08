@@ -1,4 +1,4 @@
-container,bay,multi-part,pallet
-pallet = 50 container 
-bay = 5000 container
-multi-part = 500 container
+Pallet,Rack,Row,Shelf
+Pallet = 12 Rack
+Rack = 18 Row
+Row = 30 Shelf

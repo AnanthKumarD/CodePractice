@@ -8,7 +8,6 @@ def toGoatLatin(S):
     for i in range(len(S)):
         try:
             if(vowels.index(S[i][0]) >= 0):
-                print(S[i],'......',S[i][0])
                 newVal.append(S[i] + 'ma' + 'a'*i + 'a');
         except ValueError:
             newVal.append(S[i][1:None] + S[i][0] + 'ma' + 'a'*i + 'a')
