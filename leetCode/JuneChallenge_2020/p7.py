@@ -2,8 +2,8 @@ import math;
 def isPowerOfTwo(n):
     i = 0;
     result = 0;
-    if n == 0:
-        return Fals;
+    if n <= 0:
+        return False;
     flag = True;
     while result != n and result <=n:
         result = int(math.pow(2,i));
