@@ -274,9 +274,19 @@ Advanced CSS:
 		CSS animations allows animation of most HTML elements without using JavaScript or Flash!
 
  
+Flex:-
 
 
+	display:flex;
+		flex-direction : row | column | row-reverse | column-revers;
 
+		flex-wrap: wrap | nowrap | wrap-reverse
+
+
+		flex-flow : row wrap
+			its a shorhand for flex-direction and flex-wrap
+
+		justify-content: flex-start | flex-end | center | space-around | space-between | space-evenly
 
 
 
